@@ -25,21 +25,6 @@ footer {
   text-align: center;
 }
 
-table {
-  position: relative;
-  height: 200px;
-  width: 50%;
-  margin-left: 270px;
-  margin-top: 50px;
-  color: #596e79;
-}
-td {
-  border: 1px solid #fff;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: center;
-  color: #596e79;
-}
 .container {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   max-width: 1000px;
@@ -72,8 +57,4 @@ ul {
 
 .btn-success {
   color: #fff;
-}
-
-.card-text {
-  color: #596e79;
 }
