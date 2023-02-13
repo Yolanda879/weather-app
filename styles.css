@@ -21,23 +21,22 @@ h4 {
   font-size: 20px;
   color: #2c5d63;
 }
-footer {
-  text-align: center;
-}
 
 .container {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   max-width: 1000px;
   border: 1px solid #fff;
   margin: 50px auto;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .description {
   text-transform: capitalize;
 }
-.github-link {
+small .github-link {
   text-align: center;
+  font-size: 80%;
+  font-weight: 600;
 }
 
 .weather {
