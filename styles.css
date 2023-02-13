@@ -1,13 +1,19 @@
-body {
+.container {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   max-width: 1000px;
   border: 1px solid #fff;
   margin: 50px auto;
+  margin-bottom: 10px;
 }
 
 li {
   list-style: none;
 }
+
+.github-link {
+  text-align: center;
+}
+
 .weather {
   margin-top: 8px;
   color: #596e79;
