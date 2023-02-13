@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+  <body class="home-page">
+    <div class="container">
+      <h2 id="city"></h2>
+      <form id="search-form">
+        <div class="row">
+          <div class="col-4">
+            <input
+              type="search"
+              placeholder="Type a city
+              "
+              class="form-control shadow-sn"
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+            />
+          </div>
+          <div class="col-2">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sn"
+            />
+          </div>
+          <div class="col-2">
+            <button class="btn btn-success w-100" id="current-location-button">
+              Current
+            </button>
+          </div>
+
+          <div class="weather">
+            <span class="date" id="date"></span>
+            <br />
+            <span class="temperature" id="temperature"></span>
+            <span class="units">°C</span>
+            <br />
+            <span class="description" id="description"></span>
+          </div>
+          <br />
+
+          <div class="more-weather">
+            <ul>
+              <li>Humidity: <span id="humidity"></span> %</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Sun, 22</h5>
+                <p class="card-text">
+                  ⛅
+                  <br />
+                  27°C
+                  <br />
+                  14°C
+                </p>
+                <p class="card-text"></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mon, 23</h5>
+                <p class="card-text">
+                  🌞
+                  <br />
+                  30°C
+                  <br />
+                  18°C
+                </p>
+                <p class="card-text"></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tue, 24</h5>
+                <p class="card-text">
+                  ⛈
+                  <br />
+                  27°C
+                  <br />
+                  14°C
+                </p>
+                <p class="card-text"></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Wed, 25</h5>
+                <p class="card-text">
+                  🌞
+                  <br />
+                  29°C
+                  <br />
+                  17°C
+                </p>
+                <p class="card-text"></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Thur, 26</h5>
+                <p class="card-text">
+                  🌦
+                  <br />
+                  29°C
+                  <br />
+                  16°C
+                </p>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <div class="sun">
+            <i class="fa-thin fa-sunrise">Sunrise: 05:34</i>
+            <br />
+            <i class="fa-solid fa-sunset">Sunset: 19:05</i>
+          </div>
+          <br />
+
+          <footer>
+            <a href="detailed-forecast.html"> *detailed forecast </a>
+          </footer>
+        </div>
+
+        <script src="src/script.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
