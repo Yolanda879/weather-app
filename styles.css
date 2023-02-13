@@ -30,6 +30,21 @@ h4 {
   margin-bottom: 8px;
   padding: 20px;
 }
+.Fahrenheit-link {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: none;
+  color: #596e79;
+}
+
+.weather .units {
+  position: relative;
+  font-size: 16px;
+  top: -9px;
+  left: -4px;
+}
 
 .description {
   text-transform: capitalize;
@@ -44,6 +59,9 @@ small .github-link {
   margin-top: 8px;
   color: #596e79;
   font-size: 23px;
+}
+.weather .temperature {
+  font-size: 30px;
 }
 
 ul {
