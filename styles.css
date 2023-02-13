@@ -47,6 +47,10 @@ td {
   margin: 50px auto;
   margin-bottom: 10px;
 }
+
+.description {
+  text-transform: capitalize;
+}
 .github-link {
   text-align: center;
 }
