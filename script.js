@@ -69,21 +69,27 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
-    forecastHTML +
-    `
-  <div class="col-2">
-  <div class="forecast-date">Wed</div>
-  <img src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
-  alt=""
-  width="42"
-  </
-  <div class="forecast-temperature">
-  <span class="forecast-temperature-max"18°C</span>
-  <span class="forecast-temperature-min"12°C</span>
-  </div>
-  </div>
+  let days = ["Wed", "Thur", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+   
+            <div class="col-2">
+              
+                <div class="forecast-date">${day}</div>
+                <div class="forecast-temperature">
+                  <img src="" alt="" width="45" />
+                  <br />
+                  <span class="forecast-temperature-max"> 20°C </span>
+                  <span class="forecast-temperature-min"> 14°C</span>
+                </div>
+              </div>
   `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 let currentLocationButton = document.querySelector("#current-location-button");
@@ -93,3 +99,4 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("Johannesburg");
+displayForecast();
