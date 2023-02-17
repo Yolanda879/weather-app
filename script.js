@@ -56,8 +56,13 @@ function displayForecast(response) {
     </div>
     
 `;
+
+      `<div class="sunrise">Sunrise</div>
+   `;
     }
   });
+
+  `<div class="sunrise>Sunrise</div>`;
 
   forecastHTML = forecastHTML + `</div`;
   forecastElement.innerHTML = forecastHTML;

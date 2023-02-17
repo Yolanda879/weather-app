@@ -24,14 +24,17 @@ h4 {
 
 .container {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  max-width: 1000px;
+  max-width: 600px;
   border: 1px solid #fff;
   margin: 50px auto;
   margin-bottom: 8px;
   padding: 20px;
+  padding-bottom: 0px;
 }
-.Fahrenheit-link {
-  text-decoration: none;
+
+.container-wrapper {
+  max-width: 600px;
+  margin-bottom: 10px;
 }
 
 .active {
@@ -49,17 +52,31 @@ h4 {
 .description {
   text-transform: capitalize;
 }
-small .github-link {
-  text-align: center;
-  font-size: 80%;
-  font-weight: 600;
-}
 
 .weather {
   margin-top: 8px;
   color: #596e79;
   font-size: 23px;
 }
+
+.date {
+  margin-top: 8px;
+  color: #596e79;
+  font-size: 22px;
+}
+
+.forecast {
+  border-bottom: 1px solid #f9f7fe;
+  font-size: 20px;
+  color: #596e79;
+  padding-bottom: 20px;
+  padding-top: -5px;
+  margin-top: -50px;
+  text-align: center;
+  padding-left: 20px;
+  padding-left: 20px;
+}
+
 .weather .temperature {
   font-size: 30px;
 }
@@ -69,8 +86,13 @@ ul {
   font-size: 19px;
   color: #596e79;
   position: relative;
-  bottom: 100px;
+  bottom: 80px;
   right: 120px;
+}
+
+.icon {
+  position: relative;
+  top: 4px;
 }
 
 .btn-success {
