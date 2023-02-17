@@ -1,5 +1,4 @@
 let today = new Date();
-
 let days = [
   "Sunday",
   "Monday",
@@ -20,6 +19,34 @@ function addZero(num) {
 let dateElement = document.querySelector(".date");
 dateElement.innerHTML = `${day}, ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+   <div class="col-2">
+     <div class="weather-forecast-date">${day}</div>
+    <img 
+    src="http://openweathermap.org/img/wn/
+    alt=""
+    width="42"
+    />
+    <div class="weather-forecast-temperature">
+      <span class="weather-forecast-temperature-max"> 20° </span>
+      <span class="weather-forecast-temperature-min"> 15° </span>
+    </div>
+    </div>
+    
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div`;
+  forecastElement.innerHTML = forecastHTML;
+}
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -65,33 +92,6 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function displayForecast(response) {
-  let forecastElement = document.querySelector("#forecast");
-
-  let forecastHTML = `<div class="row">`;
-  let days = ["Wed", "Thur", "Fri", "Sat", "Sun"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
-   
-            <div class="col-2">
-              
-                <div class="forecast-date">${day}</div>
-                <div class="forecast-temperature">
-                  <img src="" alt="" width="45" />
-                  <br />
-                  <span class="forecast-temperature-max"> 20°C </span>
-                  <span class="forecast-temperature-min"> 14°C</span>
-                </div>
-              </div>
-  `;
-  });
-
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
-}
-
 function getForecast(coordinates) {
   let apiKey = "7784a4cd4aa2e0c25ead7bd96d585b8a";
 
@@ -106,3 +106,4 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("Johannesburg");
+displayForecast();
