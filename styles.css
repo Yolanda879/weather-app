@@ -54,7 +54,7 @@ h4 {
 }
 
 .weather {
-  margin-top: 8px;
+  margin-top: 45px;
   color: #596e79;
   font-size: 23px;
 }
@@ -62,7 +62,7 @@ h4 {
 .date {
   margin-top: 8px;
   color: #596e79;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .forecast {
@@ -97,4 +97,29 @@ ul {
 
 .btn-success {
   color: #fff;
+}
+
+.search-button {
+  position: fixed;
+  margin-left: 85px;
+}
+
+.current-location {
+  position: fixed;
+  margin-left: 95px;
+}
+
+.search-city {
+  position: fixed;
+}
+
+.more-weather {
+  position: relative;
+  margin-left: 90px;
+}
+
+.icon {
+  position: relative;
+
+  bottom: 10px;
 }

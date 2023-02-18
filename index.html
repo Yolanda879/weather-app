@@ -21,29 +21,35 @@
         <form id="search-form">
           <div class="row">
             <div class="col-4">
-              <input
-                type="search"
-                placeholder="Type a city"
-                class="form-control shadow-sn"
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-              />
+              <div class="search-city">
+                <input
+                  type="search"
+                  placeholder="Type a city"
+                  class="form-control shadow-sn"
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                />
+              </div>
             </div>
             <div class="col-2">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sn"
-              />
+              <div class="search-button">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sn"
+                />
+              </div>
             </div>
             <div class="col-2" id="current-location-button">
-              <button
-                class="btn btn-success w-100"
-                id="current-location-button"
-              >
-                Current
-              </button>
+              <div class="current-location">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </div>
             </div>
 
             <div class="weather">
