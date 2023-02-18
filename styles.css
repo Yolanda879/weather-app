@@ -101,16 +101,19 @@ ul {
 
 .search-button {
   position: fixed;
-  margin-left: 85px;
+  margin-left: 70px;
 }
 
 .current-location {
   position: fixed;
-  margin-left: 95px;
+  margin-left: 85px;
 }
 
 .search-city {
   position: fixed;
+  padding-right: 20px;
+  height: 100px;
+  width: 150px;
 }
 
 .more-weather {
